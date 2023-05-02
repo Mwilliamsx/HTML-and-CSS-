@@ -12,7 +12,7 @@ body {
 }
 
 #contact {
-    background-color:  rgba(236, 236, 236);,1
+    background-color:  rgba(236, 236, 236);
 }
 
 .reservation {
@@ -63,7 +63,7 @@ body {
     border: 1px solid #808080;
     margin: 2% auto;
     border-radius: 7px;
-    background: rgba(236, 236, 236);,1
+    background: rgba(236, 236, 236);
     box-shadow: 2px 3px 3px 0px rgba(0, 0, 0.3);
     font-family: 'Raleway', sans-serif;
 }
@@ -81,7 +81,7 @@ body {
     border-left: 1px solid #090B0D;
     margin: 10px 1em;
     border-radius: 7px;
-    background: #13161B
+    background: #13161B;
     box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
     font-family: 'Raleway', sans-serif;
 }
@@ -99,7 +99,7 @@ body {
     padding-left: 52px;
     font-size: 14px;
     line-height: 5px;
-    color: #000
+    color: #000;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     font-weight:600;
@@ -132,7 +132,7 @@ body {
 }
 
 .submit input[type="submit"]:hover {
-    color: #black;
+    color: black;
     background-color: #FF5733;
     box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
 }
