@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>2023 BMW 3-Series</title>
 	<link rel="stylesheet" href="./CSS/one_page_website.css">
+	<script src="./JS/one_page_website.js"></script>
 </head>
 <body>
 	<!-- NAV -->
@@ -46,101 +47,122 @@
 	<!-- END SUBSCRIBE -->
 				
 
-				<!-- PHOTO CONTAINER 1 -->
-				<div>
-					<div>
-						<img src="Images/Bmw_23_328i/Thumbnail_4.jpeg" alt="">
-						<div>
-							<h3>AIR JORDAN 1 RETRO HIGH OG 'PATENT BRED'</h3>
-							<p><em>Exculsive releases dropping weekly, SIGN UP so you don't miss the next limited release!</em></p>
-						</div>
-					</div>
-				</div>
-			<!-- END PHOTO CONTAINER 1 -->
+				<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="./Images/Bmw_23_328i/Thumbnail_4 copy.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Images/Bmw_23_328i/Thumbnail_2 copy.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Images/Bmw_23_328i/Thumbnail_3 copy.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Images/Bmw_23_328i/Thumbnail_8 copy.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="./Images/Bmw_23_328i/Thumbnail_9 copy.jpeg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="./Images/Bmw_23_328i/Thumbnail_10 copy.jpeg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="./Images/Bmw_23_328i/Thumbnail_11 copy.jpeg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="./Images/Bmw_23_328i/Thumbnail_12 copy.jpeg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 8</div>
+		<img src="./Images/Bmw_23_328i/Thumbnail_4.jpeg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 8</div>
+		<img src="./Images/Bmw_23_328i/Thumbnail_2.jpeg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 8</div>
+		<img src="./Images/Bmw_23_328i/Thumbnail_3.jpeg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 8</div>
+		<img src="./Images/Bmw_23_328i/Thumbnail_8.jpeg" style="width:100%">
+	  </div>
 
-			<!-- PHOTO CONTAINER 1 -->
-				<div>
-					<div>
-						<img src="Images/Bmw_23_328i/Thumbnail_2.jpeg" alt="">
-						<div>
-							<h3>AIR JORDAN 1 RETRO HIGH OG 'PATENT BRED'</h3>
-							<p><em>Exculsive releases dropping weekly, SIGN UP so you don't miss the next limited release!</em></p>
-						</div>
-					</div>
-				</div>
-			<!-- END PHOTO CONTAINER 1 -->
+	  <div class="mySlides">
+		<div class="numbertext">5 / 8</div>
+		<img src="./Images/Bmw_23_328i/Thumbnail_9.jpeg" style="width:100%">
+	  </div>
 
-			<!-- PHOTO CONTAINER 1 -->
-				<div>
-					<div>
-						<img src="Images/Bmw_23_328i/Thumbnail_3.jpeg" alt="">
-						<div>
-							<h3>AIR JORDAN 1 RETRO HIGH OG 'PATENT BRED'</h3>
-							<p><em>Exculsive releases dropping weekly, SIGN UP so you don't miss the next limited release!</em></p>
-						</div>
-					</div>
-				</div>
-			<!-- END PHOTO CONTAINER 1 -->
+	  <div class="mySlides">
+		<div class="numbertext">6 / 8</div>
+		<img src="./Images/Bmw_23_328i/Thumbnail_10.jpeg" style="width:100%">
+	  </div>
 
-			<!-- PHOTO CONTAINER 1 -->
-				<div>
-					<div>
-						<img src="Images/Bmw_23_328i/Thumbnail_8.jpeg" alt="">
-						<div>
-							<h3>AIR JORDAN 1 RETRO HIGH OG 'PATENT BRED'</h3>
-							<p><em>Exculsive releases dropping weekly, SIGN UP so you don't miss the next limited release!</em></p>
-						</div>
-					</div>
-				</div>
-			<!-- END PHOTO CONTAINER 1 -->
+	  <div class="mySlides">
+		<div class="numbertext">7 / 8</div>
+		<img src="./Images/Bmw_23_328i/Thumbnail_11.jpeg" style="width:100%">
+	  </div>
 
-			<!-- PHOTO CONTAINER 1 -->
-				<div>
-					<div>
-						<img src="Images/Bmw_23_328i/Thumbnail_9.jpeg" alt="">
-						<div>
-							<h3>AIR JORDAN 1 RETRO HIGH OG 'PATENT BRED'</h3>
-							<p><em>Exculsive releases dropping weekly, SIGN UP so you don't miss the next limited release!</em></p>
-						</div>
-					</div>
-				</div>
-			<!-- END PHOTO CONTAINER 1 -->
+	  <div class="mySlides">
+		<div class="numbertext">8 / 8</div>
+		<img src="./Images/Bmw_23_328i/Thumbnail_12.jpeg" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="./Images/Bmw_23_328i/Thumbnail_4.jpeg" onclick="currentSlide(1)" alt="Nature">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./Images/Bmw_23_328i/Thumbnail_2.jpeg" onclick="currentSlide(2)" alt="Snow">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./Images/Bmw_23_328i/Thumbnail_3.jpeg" onclick="currentSlide(3)" alt="Mountains">
+	  </div>
 
-			<!-- PHOTO CONTAINER 1 -->
-				<div>
-					<div>
-						<img src="Images/Bmw_23_328i/Thumbnail_10.jpeg" alt="">
-						<div>
-							<h3>AIR JORDAN 1 RETRO HIGH OG 'PATENT BRED'</h3>
-							<p><em>Exculsive releases dropping weekly, SIGN UP so you don't miss the next limited release!</em></p>
-						</div>
-					</div>
-				</div>
-			<!-- END PHOTO CONTAINER 1 -->
+	  <div class="column">
+		<img class="demo" src="./Images/Bmw_23_328i/Thumbnail_8.jpeg" onclick="currentSlide(4)" alt="Mountains">
+	  </div>
 
-			<!-- PHOTO CONTAINER 1 -->
-				<div>
-					<div>
-						<img src="Images/Bmw_23_328i/Thumbnail_11.jpeg" alt="">
-						<div>
-							<h3>AIR JORDAN 1 RETRO HIGH OG 'PATENT BRED'</h3>
-							<p><em>Exculsive releases dropping weekly, SIGN UP so you don't miss the next limited release!</em></p>
-						</div>
-					</div>
-				</div>
-			<!-- END PHOTO CONTAINER 1 -->
+	  <div class="column">
+		<img class="demo" src="./Images/Bmw_23_328i/Thumbnail_9.jpeg" onclick="currentSlide(5)" alt="Mountains">
+	  </div>
 
-			<!-- PHOTO CONTAINER 1 -->
-				<div>
-					<div>
-						<img src="Images/Bmw_23_328i/Thumbnail_12.jpeg" alt="">
-						<div>
-							<h3>AIR JORDAN 1 RETRO HIGH OG 'PATENT BRED'</h3>
-							<p><em>Exculsive releases dropping weekly, SIGN UP so you don't miss the next limited release!</em></p>
-						</div>
-					</div>
-				</div>
-			<!-- END PHOTO CONTAINER 1 -->
+	  <div class="column">
+		<img class="demo" src="./Images/Bmw_23_328i/Thumbnail_10.jpeg" onclick="currentSlide(6)" alt="Mountains">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./Images/Bmw_23_328i/Thumbnail_11.jpeg" onclick="currentSlide(7)" alt="Mountains">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./Images/Bmw_23_328i/Thumbnail_12.jpeg" onclick="currentSlide(8)" alt="Mountains">
+	  </div>
+	</div>
+  </div>
 
 			<!-- VIDEO -->
 				<div>
